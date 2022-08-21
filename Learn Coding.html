@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!-- saved from url=(0110)http://localhost:63342/pythonProject11/homepage.html?_ijt=r8fk42re1380gai1kg0nrgtldn&_ij_reload=RELOAD_ON_SAVE -->
+<html lang="en" xmlns="http://www.w3.org/1999/html"><!--THIS IS HEAD PART--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale">
+        <title> Learn Coding</title>
+    </head>
+
+    <body>
+        <header>
+        <div>
+            <h1><u>Welcome To Coding ERA:</u></h1>
+            <img src="./Learn Coding_files/th" alt="just a pic" height="350">
+        </div>
+        </header>
+        <main>
+            <div>
+                <h4>Take these courses and learn skills and become master in programming.</h4>
+                <h4>ALL in one!!! From basic to advance level.</h4>
+            </div>
+                <div>
+                    <table>
+                    <caption>
+                        <pre><big><b>programming language courses:</b></big></pre>
+                    </caption>
+                    <thead>
+
+                        <tr>
+                            <th>Languages</th>
+                            <th> Basics Course</th>
+                            <th>OOP Course</th>
+                            <th>DSA Course</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Python</td>
+                            <td>Available</td>
+                            <td>Available</td>
+                            <td>Available</td>
+
+                        </tr>
+
+                         <tr>
+                            <td>C++</td>
+                            <td>Available</td>
+                            <td>Available</td>
+                            <td>Available</td>
+
+                        </tr>
+
+                         <tr>
+                            <td>C</td>
+                            <td>Available</td>
+                            <td>Available</td>
+                            <td>Available</td>
+                        </tr>
+
+                         <tr>
+                            <td>JAVA</td>
+                            <td>Available</td>
+                            <td>Available</td>
+                            <td>Available</td>
+
+                        </tr>
+                    </tbody>
+                    </table>
+                    <hr>
+                </div>
+
+                <div>
+                    <table>
+                        <caption>
+                            <pre><big><b>Some skills learning courses</b></big></pre>
+                        </caption>
+                        <thead>
+                            <tr>
+                                <th>Course Name </th>
+                                <th>Availability</th>
+                                <th>Coming soon</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Web development</td>
+                                <td>Present</td>
+                                <td> ***</td>
+                            </tr>
+
+                            <tr>
+                                <td>App development</td>
+                                <td>not present</td>
+                                <td>Yes</td>
+                            </tr>
+
+                            <tr>
+                                <td>My SQL</td>
+                                <td>present</td>
+                                <td>***</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+                <hr>
+        </main>
+
+        <footer>
+            <a href="http://localhost:63342/pythonproject11/videos.html" target="_main"><big><b>For learning click here!!!</b></big> </a>
+        </footer>
+    
+
+<script>
+(function() {
+  var ws = new WebSocket('ws://' + window.location.host + 
+             '/jb-server-page?reloadMode=RELOAD_ON_SAVE&'+
+             'referrer=' + encodeURIComponent(window.location.pathname));
+  ws.onmessage = function (msg) {
+      if (msg.data === 'reload') {
+          window.location.reload();
+      }
+      if (msg.data.startsWith('update-css ')) {
+          var messageId = msg.data.substring(11);
+          var links = document.getElementsByTagName('link');
+          for (var i = 0; i < links.length; i++) {
+              var link = links[i];
+              if (link.rel !== 'stylesheet') continue;
+              var clonedLink = link.cloneNode(true);
+              var newHref = link.href.replace(/(&|\?)jbUpdateLinksId=\d+/, "$1jbUpdateLinksId=" + messageId);
+              if (newHref !== link.href) {
+                clonedLink.href = newHref;
+              }
+              else {
+                var indexOfQuest = newHref.indexOf('?');
+                if (indexOfQuest >= 0) {
+                  // to support ?foo#hash 
+                  clonedLink.href = newHref.substring(0, indexOfQuest + 1) + 'jbUpdateLinksId=' + messageId + '&' + 
+                                    newHref.substring(indexOfQuest + 1);
+                }
+                else {
+                  clonedLink.href += '?' + 'jbUpdateLinksId=' + messageId;
+                }
+              }
+              link.replaceWith(clonedLink);
+          }
+      }
+  };
+})();
+</script></body></html>
